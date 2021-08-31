@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>دربك</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="nav-items" class="d-flex mx-5 h-100">
+        <span id="item" class="d-flex align-items-center mx-2 h-100">
+          <span class="material-icons"> circle_notifications </span></span
+        >
+        <span
+          id="item"
+          class="d-flex align-items-center mx-2 position-relative h-100"
+        >
+          <span class="material-icons">account_circle</span>
+          مدير الموقع
+          <span class="material-icons expand-icon">expand_more</span>
+          <span class="position-absolute" id="expandedList">
+            <ul>
+              <li>حسابي</li>
+              <li>تسجيل الخروج</li>
+            </ul>
+          </span>
+        </span>
+      </div>
+    </nav>
+    <aside class="d-flex align-items-center flex-column">
+      <div id="logoContainer" class="d-flex justify-content-center mt-3">
+        <img src="./media/logo.png" alt="" />
+      </div>
+      <section style="margin-top: 13px" class="w-100">
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> dashboard </span>
+          <span>لوحة التحكم</span>
+        </div>
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> settings </span>
+          <span>الاعدادات</span>
+        </div>
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> import_contacts </span>
+          <span>كتالوج</span>
+        </div>
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> attach_money </span>
+          <span>المبيعات</span>
+        </div>
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> groups </span>
+          <span>العملاء</span>
+        </div>
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> connect_without_contact </span>
+          <span>التجار</span>
+        </div>
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> campaign </span>
+          <span>المسوقين</span>
+        </div>
+        <div class="sideItem d-flex align-items-center flex-column">
+          <span class="material-icons"> power_settings_new </span>
+          <span>تسجيل الخروج</span>
+        </div>
+      </section>
+      <div class="sideMenu">
+        <div class="d-flex justify-content-between sideMenuHeader">
+          <span style="font-size: 25px">التجار</span>
+          <span class="material-icons" id='close'> close </span>
+        </div>
+        <div class="row sideMenuMain">
+          <div class="col-4">
+            <h3>حسابات التجار</h3>
+            <ul>
+              <li>تجار مفعلين</li>
+              <li>تجار بانتظار التفعيل</li>
+              <li>تجار مرفوضين</li>
+              <li>تجار مجمدين</li>
+              <li>تجار محظورين</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>حسابات التجار</h3>
+            <ul>
+              <li>تجار مفعلين</li>
+              <li>تجار بانتظار التفعيل</li>
+              <li>تجار مرفوضين</li>
+              <li>تجار مجمدين</li>
+              <li>تجار محظورين</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>حسابات التجار</h3>
+            <ul>
+              <li>تجار مفعلين</li>
+              <li>تجار بانتظار التفعيل</li>
+              <li>تجار مرفوضين</li>
+              <li>تجار مجمدين</li>
+              <li>تجار محظورين</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>حسابات التجار</h3>
+            <ul>
+              <li>تجار مفعلين</li>
+              <li>تجار بانتظار التفعيل</li>
+              <li>تجار مرفوضين</li>
+              <li>تجار مجمدين</li>
+              <li>تجار محظورين</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>حسابات التجار</h3>
+            <ul>
+              <li>تجار مفعلين</li>
+              <li>تجار بانتظار التفعيل</li>
+              <li>تجار مرفوضين</li>
+              <li>تجار مجمدين</li>
+              <li>تجار محظورين</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main class="position-relative float-start row">
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #27a844d6">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات تم تسليمها
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> task_alt </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #17a2b7cf">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات جديدة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> add_shopping_cart </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #fec107c7">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات قيد الشحن
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> local_shipping </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #dc3546">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات ملغاة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> block </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #27a844d6">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات تم تسليمها
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> task_alt </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #17a2b7cf">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات جديدة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> add_shopping_cart </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #fec107c7">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات قيد الشحن
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> local_shipping </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #dc3546">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات ملغاة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> block </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #27a844d6">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات تم تسليمها
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> task_alt </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #17a2b7cf">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات جديدة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> add_shopping_cart </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #fec107c7">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات قيد الشحن
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> local_shipping </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #dc3546">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات ملغاة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> block </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #27a844d6">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات تم تسليمها
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> task_alt </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #17a2b7cf">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات جديدة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> add_shopping_cart </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #fec107c7">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات قيد الشحن
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> local_shipping </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mainItem" style="background-color: #dc3546">
+          <div class="cardHeader">
+            <div id="inCardMain">
+              150 <br />
+              طلبات ملغاة
+            </div>
+            <div id="inCardIcon">
+              <span class="material-icons"> block </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center info">
+            <span class="material-icons"> info </span>تفاصيل
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
