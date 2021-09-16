@@ -136,7 +136,7 @@ main .mainItem #inCardMain {
   flex: 1;
   display: flex;
   align-items: center;
-  font-size: 26px;
+  font-size: 20px;
 }
 #inCardIcon {
   opacity: 0.5;
@@ -169,7 +169,7 @@ main .mainItem #inCardMain {
   transition: all 0.4s ease-in-out;
 }
 .showSideMenu {
-  right: 100%;
+  transform: translateX(-114.5%);
   transition: all 0.4s ease-in-out;
 }
 .sideMenuHeader {
@@ -180,9 +180,8 @@ main .mainItem #inCardMain {
   cursor: pointer;
 }
 .sideMenuHeader #close:hover {
-  background: rgba(255, 255, 255, 0.24);
-  border-radius: 50%;
-  padding: 7px 2px 0;
+  transform: scale(1.15);
+  transition: all 0.1s ease-in-out;
 }
 .sideMenuHeader {
   padding: 20px;
